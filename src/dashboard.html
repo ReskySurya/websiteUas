@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-color-primary text-color-second tracking-wider">
+    <header class="bg-transparent absolute top-0 left-0 w-full">
+        <nav class="container flex justify-between items-center ">
+            <div class="py-5 px-10 text-yellow-500 font-bold text-3xl">
+                <a href="#home">
+                    <span class="text-yellow-50">B</span>C. 
+                </a>
+            </div>
+            <div>
+                <ul class="hidden lg:flex items-center space-x-7">
+                    <li><a href="../src/dashboard.html" class="hover:text-yellow-500 font-bold ease-in duration-200">Home</a></li>
+                    <li><a href="../src/tutorial.html" class="hover:text-yellow-500 font-bold ease-in duration-200">Mapel</a></li>
+                    <li><a href="../src/buku.php" class="hover:text-yellow-500 font-bold ease-in duration-200">Buku</a></li>
+                    <li><a href="../src/profile.php" class="hover:text-yellow-500 font-bold ease-in duration-200">Profile</a></li>
+
+                    <li><button class="bg-color-second px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200 text-teal-950"><a href="./index.html">Logout</a></button></li>
+                </ul>
+            </div>
+
+            <!-- Mobile Screen -->
+            <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div id="menu" class=" hidden bg-color-primary bg-opacity-95 h-[100vh] absolute inset-0">
+                <ul class="h-full grid place-items-center py-20">
+                    <li><a id="hlink" href="#home" class="hover:text-yellow-500 ease-in duration-200">Home</a></li>
+                    <li><a id="hlink" href="../src/tutorial.html" class="hover:text-yellow-500 ease-in duration-200">Mapel</a></li>
+                    <li><a id="hlink" href="../src/buku.php" class="hover:text-yellow-500 ease-in duration-200">Buku</a></li>
+                    <li><a id="hlink" href="#home" class="hover:text-yellow-500 ease-in duration-200">Profile</a></li>
+
+                    <li><button class="bg-color-second px-9 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200 text-teal-950">Gasin</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="pt-8 pb-3 bg-yellow-50 mt-20">
+            <div class="container">
+                <div class="flex flex-wrap">
+                    <div class="w-full self-start px-16 py-16 lg:w-1/2">
+                        <div class="pb-6 text-yellow-500 font-bold text-5xl">
+                            <a href="#home">
+                                <span class="text-black">Belajar</span>Cuy. 
+                            </a>
+                        </div>
+                        <h2 class="font-semibold text-xl pb-8 text-teal-950">Tempat Belajar yang Asik dan Menyenangkan!</h2>
+
+                        <a href="../src/tutorial.html" class="bg-color-primary px-4 py-3 rounded-md capitalize font-bold hover:opacity-80 ease-in duration-200 text-color-second">Yuk Belajar</a>
+                    </div>
+
+                    <div class="w-full self-end px-4 lg:w-1/2">
+                        <div class="mt-5">
+                            <img src="../img/Belajar.png" alt="Belajar" width="500px" height="500px" class="max-w-full mx-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Jurusan" class="pt-8 pb-8">
+            <div class="container">
+                <div class="flex flex-wrap">
+                    <div class="w-full px-4 mb-5">
+                        <h4 class="font-bold uppercase text-lg my-3">Jurusan</h4>
+                        <h2 class="font-bold text-3xl mb-5">Yuk, pilih pelajaran sesuai Jurusanmu!</h2>
+                        
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-yellow-50 p-6 rounded-md capitalize font-bold hover:opacity-60 ease-in duration-200 text-gray-500">
+                                <div>
+                                    <img class="rounded-md w-12 bg-gray-200 border-x-4 border-y-4 mb-3" src="../img/ipa.png" alt="">
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-start text-black text-xl p-0 mb-2">IPA</h5>
+                                    <p class="font-thin">Ilmu yang mempelajari bagaimana alam ini bekerja. Ilmu atau mata pelajaran yang akan dipelajari di jurusan ini yakni Matematika, Fisika, Biologi, dan Kimia.</p>
+                                </div>
+                            </div>
+                            <div class="bg-yellow-50 p-6 rounded-md capitalize font-bold hover:opacity-60 ease-in duration-200 text-gray-500">
+                                <div>
+                                    <img class="rounded-md w-12 bg-gray-200 border-x-4 border-y-4 mb-3" src="../img/ips.png" alt="">
+                                </div>
+                                <div>
+                                    <h5 class="font-bold text-start text-black text-xl p-0 mb-2">IPS</h5>
+                                    <p class="font-thin">Ilmu yang mempelajari tentang sosial dan kemasyarakatan. Kemudian, ilmu atau mata pelajaran yang akan dipelajari di jurusan ini yakni Ekonomi, Geografi, Sejarah dan Sosiologi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const hamburger = document.querySelector('#hamburger');
+        const menu = document.querySelector('#menu');
+        const hlink = document.querySelector('#hlink');
+        const faSolid = document.querySelector('.fas');
+
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle('hidden');
+            faSolid.classList.toggle('fa-xmark');
+        })
+
+        hlink.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                faSolid.classList.toggle('fa-xmark');
+            })
+        });
+    </script>
+
+    <script src="../dist/js/script.js"></script>
+</body>
+</html>

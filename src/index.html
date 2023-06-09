@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/style.css" rel="stylesheet">
+</head>
+<body>
+
+    <section class="bg-color-primary min-h-screen flex items-center justify-center">
+        <!-- container form -->
+        <div class="bg-color-second flex rounded-2xl shadow-lg max-w-4xl p-4">
+            <!-- form -->
+            <div class="sm:w-1/2 px-16 pt-10">
+                <h2 class="font-bold text-2xl text-yellow-600">Login</h2>
+                <p class="text-sm mt-4">Silahkan Masuk jika anda sudah mempunyai akun</p>
+
+                <form action="../LoginSession.php" method="post" class="flex flex-col gap-4">
+                    <input class="p-2 mt-8 rounded-xl border w-full" type="text" name="email" placeholder="Email">
+                    <div class="relative" >
+                        <input class="p-2 rounded-xl border w-full" type="password" name="passwd" placeholder="Password" >
+                    </div>
+                    <p id="error-message" class="text-red-500"></p>
+                    <button class="bg-yellow-500 rounded-xl py-2" type="submit" name="submit">Login</button>
+                </form>
+                
+                <p class="mt-5 text-xs border-b border-gray-500 py-2">Lupa password?</p>
+
+                <div class="mt-3 text-xs flex justify-between items-center">
+                    <p>Belum punya Akun?</p>
+                    <button class="py-2 px-5 bg-white border rounded-xl" type="submit"><a href="../RegistrationSession.php">Daftar</a></button>
+                </div>
+
+            </div>
+
+            <!-- lottie -->
+            <div class=" sm:block hidden w-1/2 px-6">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player class="rounded-2xl" src="https://assets3.lottiefiles.com/packages/lf20_Q895iE.json"  background="transparant"  speed="1"  style="width: 200px; height: 550px;"  loop  autoplay></lottie-player>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
